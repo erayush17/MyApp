@@ -228,5 +228,10 @@
 			<url>http://127.0.0.1:8081/nexus/content/repositories/MyAppRepo</url>
 		</snapshotRepository>
 	</distributionManagement>
+	<scm>
+  		<connection>scm:svn:http://subversion.local:3690/svn/projects/x/trunk</connection>
+  		<developerConnection>scm:svn:http://subversion.local:3690/svn/projects/x/tags</developerConnection>
+  		<url>scm:svn:http://subversion.loi.local:3690/svn/projects/x/tags</url>
+ 	</scm>
 </project>
 

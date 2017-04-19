@@ -1,11 +1,14 @@
 version: 0.0.1
 
 phases:
+  build:
+    commands:
+      - mvn clean install
   post_build:
     commands:
       - echo Build completed on `date`
-      - mvn package
 artifacts:
   files:
     - target/MyApp-0.0.1-SNAPSHOT.war
+    - buildspec.yml
   discard-paths: yes

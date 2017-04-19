@@ -1,12 +1,10 @@
-version: 0.0.1
+version: 0.1
 
 phases:
   build:
     commands:
       - mvn clean install
-  post_build:
-    commands:
-      - echo Build completed on `date`
+
 artifacts:
   files:
     - target/MyApp-0.0.1-SNAPSHOT.war
